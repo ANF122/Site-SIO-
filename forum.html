@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="forum.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Site des Cours SIO</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="cours.html">Cours</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Forum</h2>
+        <form id="forumForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" required>
+            <label for="message">Message :</label>
+            <textarea id="message" rows="4" required></textarea>
+            <input type="submit" value="Envoyer">
+        </form>
+        <div id="posts">
+            <h3>Messages</h3>
+            <div id="postList"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Site des Cours SIO</p>
+    </footer>
+</body>
+</html>
